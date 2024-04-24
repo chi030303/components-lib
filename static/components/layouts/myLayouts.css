@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.layout2 {
+    display: flex; 
+}
+
+.layout3{
+    overflow: hidden; /* 清除浮动 */
+}
+
+/* 页头、页脚样式 */
+header, footer {
+    width: 300px;
+    height: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to bottom, #c81414, #dba0ba); /* 颜色渐变 */
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    background: linear-gradient(to bottom, #ffc0cb, #c81414); /* 颜色渐变 */
+    border-radius: 0 0 10px 10px;
+}
+
+/* 内容样式 */
+main, .sidebar {
+    height: 50px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    background: linear-gradient(to bottom, #dba0ba, #ffc0cb); /* 颜色渐变 */
+}
+
+.sidebar {
+    width: 30px;
+    background-color: #a46884;
+}

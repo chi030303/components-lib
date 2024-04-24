@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Layout</title>
+  <link rel="stylesheet" href="../static/components/tree.css">
+  <link rel="stylesheet" href="../static/components/layouts/homepage.css">
+</head>
+
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Qige's Components</h2>
+      <div class="tree" id="tree">
+        <details>
+          <summary>
+            <span class="tree-item">Button</span>
+              <!-- 点击后跳转到myButton.html -->
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Form</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Layout</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Table</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Colors</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Pagination</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Label</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Carousel</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">File</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Tree</span>
+          </summary>
+        </details>
+        <details>
+          <summary>
+            <span class="tree-item">Checkbox</span>
+          </summary>
+        </details>
+        <!-- 其他组件 -->        
+      </div>
+    </div>
+    <!-- 组件展示页面 -->
+    <div class="content">
+      <iframe id="main-iframe" src=""></iframe>
+      <!-- <h2>Main Content</h2> -->
+      <!-- <p>Main content area...</p> -->
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Footer</p>
+  </footer>
+
+  <script src="../static/scripts/componentsHandler.js"></script>
+</body>
+</html>
