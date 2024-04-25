@@ -6,6 +6,70 @@
     <title>Qige's Input</title>
 </head>
 <body>
-    
+    <div class="input-container">
+        <label for="basic-input">
+            <h3>基础输入框</h3>
+        </label>
+        <br>
+        <!-- 基础输入框 -->
+        <input type="text" id="basic-input" placeholder="Basic Input">
+    </div>
+    <div class="input-container">
+        <label for="disabled-input">
+            <h3>禁用的基础输入框</h3>
+        </label>
+        <!-- 禁用的基础输入框 -->
+        <br>
+        <input type="text" id="disabled-input" placeholder="Disabled Input" disabled>
+    </div>
+    <div class="input-container">
+        <label for="clearable-input">
+            <h3>可清空输入框</h3>
+        </label>
+        <!-- 可清空输入框 -->
+        <br>
+        <div class="clearable-input">
+            <input type="text" id="clearable-input" placeholder="Clearable Input">
+            <button class="clear-btn">X</button>
+        </div>
+    </div>
+    <div class="input-container">
+        <label for="password-input">
+            <h3>密码框</h3>
+        </label>
+        <!-- 密码框 -->
+        <br>
+        <input type="password" id="password-input" placeholder="Password">
+        <button id="togglePassword">Show</button>
+    </div>
+    <div class="input-container">
+        <label for="date-input">
+            <h3>日期输入框</h3>
+        </label>
+        <!-- 日期输入框 -->
+        <br>
+        <input type="date" id="date-input">
+    </div>
+    <div class="input-container">
+        <label for="textarea-input">
+            <h3>可自适应文本高度的文本域</h3>
+        </label>
+        <!-- 可自适应文本高度的文本域 -->
+        <textarea id="textarea-input" rows="1" style="resize: none;"></textarea>
+    </div>
+    <div class="input-container">
+        <label for="composite-input">
+            <h3>复合输入框</h3>
+        </label>
+        <!-- 复合输入框 -->
+        
+        <div class="composite-input">
+            <input type="text" id="username-input" placeholder="Username">
+            <input type="password" id="password-input" placeholder="Password">
+        </div>
+    </div>
+      
+    <script src="../static/scripts/formControl/clean.js"></script>
+    <script src="../static/scripts/formControl/secret.js"></script>
 </body>
 </html>
