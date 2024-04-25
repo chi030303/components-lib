@@ -22,8 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
           case 'Button':
               src = 'myButtons.html';
               break;
-          case 'Form':
+          case 'Input':
               src = 'myInput.html';
+              break;
+          case 'Form Control':
+              src = 'myFormControl.html';
               break;
           case 'Checkbox':
               src = 'myCheckbox.html';

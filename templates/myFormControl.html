@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qige's FormContorls</title>
+    <link rel="stylesheet" href="../static/components/forms/formControl.css">
+</head>
+<body>
+    <form>
+        <!-- select 组件 -->
+        <label for="dropdown">Select:
+            <select id="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </label>
+
+        <label for="number">Number Input:
+            <input type="number" id="number" value="0">
+        </label>
+
+        <div class="switch-container">
+            <label>Switch:
+                <span class="switch-label">Off</span>
+                <label class="switch" id="custom-switch">
+                    <span class="switch-handle" id="toggle-switch"></span>
+                  </label>
+                <span class="switch-label">On</span>
+            </label>
+        </div>
+
+        <label for="radio">Radio Buttons:
+            <label class="radio-label" for="radio1">Option 1</label>
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label class="radio-label" for="radio2">Option 2</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label class="radio-label" for="radio3">Option 3</label>
+            <input type="radio" id="radio3" name="radio" value="option3"><br>
+        </label>
+        
+        <label for="checkbox">Checkbox:
+            <label class="checkbox-label" for="checkbox1">Option 1</label>
+            <input type="checkbox" id="checkbox1" value="option1">
+            <label class="checkbox-label" for="checkbox2">Option 2</label>
+            <input type="checkbox" id="checkbox2" value="option2">
+            <label class="checkbox-label" for="checkbox3">Option 3</label>
+            <input type="checkbox" id="checkbox3" value="option3">
+            <label class="checkbox-label" for="checkbox4">Option 4</label>
+            <input type="checkbox" id="checkbox4" value="option4" disabled><br>
+        </label><br>
+        
+
+        <label for="color">Color Picker:</label>
+        <input type="color" id="color" value="#000000">
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script src="../static/scripts/formControl/switch.js"></script>
+</body>
+</html>

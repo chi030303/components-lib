@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input, .switch-container {
+    margin-bottom: 10px;
+}
+
+option:hover{
+    background-color: lightblue;
+}
+
+.switch-container{
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+
+.switch-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* switch 组件 */
+.switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+.switch-handle {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s,background-color 0.3s; /* 给背景颜色变化加一个延迟 */
+}
+
+/* 开关打开时的样式 */
+.switch-on .switch-handle {
+    transform: translateX(20px);
+}
+
+/* 开关关闭时的样式 */
+.switch-off .switch-handle {
+    transform: translateX(1px);
+}
+
+/* 为了让radio items和checkbox items在同一行上显示 */
+.radio-label,.checkbox-label{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="color"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* submit 按钮样式 */
+button[type="submit"] {
+    background-color: #007bff; /* 设置背景颜色为蓝色 */
+    color: #fff; /* 设置文字颜色为白色 */
+    border: none; /* 去除边框 */
+    border-radius: 5px; /* 圆角边框 */
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+}
+
+/* 悬停时的样式 */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* 深蓝色 */
+}
+
+/* reset 按钮样式 */
+button[type="reset"] {
+    background-color: #fff; /* 设置背景颜色为白色 */
+    color: #000; /* 设置文字颜色为黑色 */
+    border: none; /* 去除边框 */
+    border-radius: 5px; /* 圆角边框 */
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+}
+
+/* 悬停时的样式 */
+button[type="reset"]:hover {
+    background-color: #B2AEAE; 
+}
