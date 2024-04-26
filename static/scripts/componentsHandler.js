@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
               src = 'myTable.html';
               break;
           case 'Colors':
-              src = 'myColors.html';
+              src = 'myColor.html';
               break;
           case 'Pagination':
               src = 'myPagination.html';

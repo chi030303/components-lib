@@ -7,6 +7,10 @@ body {
     min-height: 100vh; /* 保证内容高度不足时页面也会占满整个视口 */
 }
 
+iframe {
+    border: none;
+}  
+
 .header {
     background-color: #333;
     color: #fff;
@@ -28,7 +32,8 @@ body {
 .content {
     flex: 1; /* 让内容区域占据剩余空间 */
     padding: 20px;
-    background-color: #e0e0e0;
+    background-color: #fff;
+    border: none;
 }
 
 #main-iframe {
