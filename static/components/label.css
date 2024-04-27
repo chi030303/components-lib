@@ -1,0 +1,46 @@
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.close-button {
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.unremovable {
+    background-color: #ccc; /* 不可删除标签的背景色 */
+}
+
+#tag-input {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#add-tag-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.new-tag {
+    background-color: #fff; /* + New Tag 的背景色 */
+    border-style: dotted;
+    cursor: pointer;
+}
+
+.new-tag:hover {
+    background-color: #ddd; /* 鼠标悬停时的背景色 */
+}
+
+.new-tag:focus {
+    outline: none; /* 移除焦点时的边框 */
+}
