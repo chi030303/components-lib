@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qige's Dialog</title>
+    <link rel="stylesheet" href="../static/components/dialog.css">
+</head>
+<body>
+
+    <h6 style="padding-left: 20px;">对话框组件</h6>
+
+    <div style="padding-left: 20px;">
+        <button id="open-dialog-btn">Open Dialog</button>
+    </div>
+
+    <div class="dialog-container" id="dialog-container">
+        <div class="dialog" id="dialog">
+            <div class="dialog-header">Dialog</div>
+            <div class="dialog-body" id="dialog-body"></div>
+            <div class="dialog-footer">
+                <button id="confirm-btn">OK</button>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <script src="../static/scripts/dialog.js"></script>
+</body>
+</html>

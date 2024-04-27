@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
           case 'Form Control':
               src = 'myFormControl.html';
               break;
-          case 'Checkbox':
-              src = 'myCheckbox.html';
+          case 'Dialog':
+              src = 'myDialog.html';
               break;
           case 'Layout':
               src = 'myLayout.html';
