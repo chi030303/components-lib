@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qige's table</title>
+    <link rel="stylesheet" href="../static/components/table.css">
+</head>
+<body>
+    <h3 style="padding-left: 20px;">表格组件</h3>
+    <h6 style="padding-left: 20px;">点击表头可以排序</h6>
+
+    <table id="sortable-table">
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="select-all"></th>
+            <th data-column="name">Name</th>
+            <th data-column="age">Age</th>
+            <th data-column="gender">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="select-checkbox"></td>
+            <td>John</td>
+            <td>28</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="select-checkbox"></td>
+            <td>Jane</td>
+            <td>25</td>
+            <td>Female</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="select-checkbox"></td>
+            <td>Tom</td>
+            <td>32</td>
+            <td>Male</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <script src="../static/scripts/table.js"></script>
+</body>
+</html>

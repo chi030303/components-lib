@@ -1,0 +1,41 @@
+.pagination {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.page-item {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination-arrows {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination-arrows button {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination-arrows button {
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: transparent; /* 将按钮的背景色设置为透明 */
+    border: none; /* 移除按钮的边框 */
+}
+
+.pagination-arrows button:hover{
+    color: aqua;
+    border-color: aqua;
+}
+
+.page-item:hover{
+    color: lightblue;
+}
+
+.select{
+    border-radius: 10px;
+}

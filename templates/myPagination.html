@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qige's Pagination</title>
+    <link rel="stylesheet" href="../static/components/page.css">
+</head>
+<body>
+
+    <h3 style="padding-left: 20px;">分页组件</h3>
+    <h6 style="padding-left: 20px;">这是普通分页组件，组件分页按钮可点击，默认一页十条</h6>
+    <div id="pagination-container-without-dropdown" style="padding-left: 20px;">
+        <div class="pagination-arrows">
+            <button id="prev-page-without-dropdown" class="button" onclick="onPrevPageClickWithoutDropdown()">&#60;</button>
+            <ul id="pagination-without-dropdown" class="pagination"></ul>
+            <button id="next-page-without-dropdown" class="button" onclick="onNextPageClickWithoutDropdown()">&#62;</button>
+        </div>
+    </div>    
+
+    <h6 style="padding-left: 20px;">可以选择每页显示数据量</h6>
+    <div id="pagination-container-with-dropdown" style="padding-left: 20px;">
+        <div class="pagination-arrows">
+            <button id="prev-page-dropdown" onclick="onPrevPageClickDropdown()">&#60;</button>
+            <ul id="pagination-with-dropdown" class="pagination"></ul>
+            <button id="next-page-dropdown" onclick="onNextPageClickDropdown()">&#62;</button>
+            <label for="items-per-page-dropdown"></label>
+            <select id="items-per-page-dropdown" onchange="onItemsPerPageChangeDropdown()">
+                <option value="5">5条/每页</option>
+                <option value="10" selected>10条/页</option>
+                <option value="20">20条/每页</option>
+                <option value="50">50条/每页</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="../static/scripts/paginaton/pageClick.js"></script>
+</body>
+</html>
