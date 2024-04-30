@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
           case 'Carousel':
               src = 'myCarousel.html';
               break;
-          case 'File':
-              src = 'myFile.html';
+          case 'Upload':
+              src = 'myUpload.html';
               break;
           case 'Select':
               src = 'mySelect.html';
