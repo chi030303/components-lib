@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/components/upload/fileUpload.css">
+    <link rel="stylesheet" href="../static/components/upload/picUpload.css">
+    <title>Qige's Upload</title>
+</head>
+<body>
+    <h3>上传组件</h3>
+    <h4>文件上传</h4>
+
+    <div id="file-upload">
+        <input type="file" id="file-input" multiple style="display: none;">
+        <button id="choose-file-btn">选择文件</button>
+        <ul id="file-list"></ul>
+    </div>
+    
+    <h4>图片上传</h4>
+    <div id="image-upload">
+        <input type="file" id="image-input" accept="image/*" style="display: none;">
+        <label for="image-input" id="image-container">
+            <span id="choose-image-btn">选择图片</span>
+        </label>
+        <div id="image-preview"></div>
+    </div>         
+
+    <script src="../static/scripts/upload/fileUpload.js"></script>
+    <script src="../static/scripts/upload/picUpload.js"></script>
+</body>
+</html>
