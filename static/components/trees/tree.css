@@ -1,0 +1,85 @@
+/* tree.css */
+.tree details{
+  padding-left: 10px;
+}
+
+.tree summary{
+  outline: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+/* 菜单项未打开时，箭头向右 */
+.tree details:not([open]) > summary .tree-item::before {
+  content: '';
+  background-image: url('../../source/sort-right.png');
+  background-size: cover;
+  width: 20px; /* 箭头图片的宽度 */
+  height: 20px; /* 箭头图片的高度 */
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* 菜单项打开时，箭头向下 */
+.tree details[open] > summary .tree-item::before {
+  content: '';
+  background-image: url('../../source/sort-down.png'); 
+  background-size: cover;
+  width: 20px; /* 箭头图片的宽度 */
+  height: 20px; /* 箭头图片的高度 */
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* 对于没有子details元素的summary元素，不添加箭头 */
+.tree details > summary:only-child .tree-item::before {
+  content: none;
+}
+
+.tree{
+  flex: 1;
+  padding: 4px 0;
+  position: relative;
+  width: 200px;
+  height: 600px;
+  overflow: auto;
+}
+
+/* margin设为负的增加鼠标可点击范围，实现通栏点击效果 */
+.tree-item{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.85);
+  padding-left: 100px;
+  margin-left: -100px;
+  cursor: default;
+}
+
+.tree-item::after{
+  content: '';
+  left: 10px;
+  right: 10px; /* 水平方向的尺寸依赖于父级.tree */
+  height: 38px;
+  background: #EEF2FF;
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  transition: .2s;
+}
+
+.tree-item:hover{
+  background: #86A8E7;
+  cursor: pointer;
+}
+
+.tree-item::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 8px;
+  background-image: url('../source/sort-right.png'); 
+  background-size: cover;
+}

@@ -8,7 +8,7 @@ colorCards.forEach(function(colorCard) {
     var url = colorCard.getAttribute('url');
     // 如果存在对应的 URL，则重定向到该 URL
     if (url) {
-      window.location.href = url;
+      window.open(url, '_blank');
     }
   });
 });

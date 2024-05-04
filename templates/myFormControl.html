@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="../static/components/forms/formControl.css">
 </head>
 <body>
+    <h3>表单组件</h3>
+    
     <form>
+        <h6>单选框</h6>
         <!-- select 组件 -->
         <label for="dropdown">Select:
             <select id="dropdown">
@@ -17,10 +20,12 @@
             </select>
         </label>
 
+        <h6>数字输入框</h6>
         <label for="number">Number Input:
             <input type="number" id="number" value="0">
         </label>
 
+        <h6>Switch开关</h6>
         <div class="switch-container">
             <label>Switch:
                 <span class="switch-label">Off</span>
@@ -31,7 +36,8 @@
             </label>
         </div>
 
-        <label for="radio">Radio Buttons:
+        <h6>单选框</h6>
+        <label for="radio">Radio Buttons: 
             <label class="radio-label" for="radio1">Option 1</label>
             <input type="radio" id="radio1" name="radio" value="option1">
             <label class="radio-label" for="radio2">Option 2</label>
@@ -40,7 +46,8 @@
             <input type="radio" id="radio3" name="radio" value="option3"><br>
         </label>
         
-        <label for="checkbox">Checkbox:
+        <h6>多选框</h6>
+        <label for="checkbox">Checkbox: 
             <label class="checkbox-label" for="checkbox1">Option 1</label>
             <input type="checkbox" id="checkbox1" value="option1">
             <label class="checkbox-label" for="checkbox2">Option 2</label>
@@ -51,15 +58,27 @@
             <input type="checkbox" id="checkbox4" value="option4" disabled><br>
         </label><br>
         
-
+        <h6>颜色选择器</h6>
         <label for="color">Color Picker:</label>
         <input type="color" id="color" value="#000000">
 
         <br><br>
+
+        <h6>提交按钮、重置按钮</h6>
+        <h6>点击后提交、重置表单内容</h6>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </form>
 
+    <br><br>
+    <div class="example">
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOyNqJm" data-user="tansill" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/tansill/pen/gOyNqJm">
+            formcontrol</a> by 騏tansill (<a href="https://codepen.io/tansill">@tansill</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </div>
     <script src="../static/scripts/formControl/switch.js"></script>
 </body>
 </html>

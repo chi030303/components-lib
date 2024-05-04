@@ -11,11 +11,54 @@ iframe {
     border: none;
 }  
 
-.header {
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    height: 15px;
     text-align: center;
+    background: linear-gradient(45deg, #C6FFDD, #FBD786, #f7797d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradient{
+from{
+        background-position: 0% 50%;
+    }
+to{
+        background-position: 100% 50%;
+    }
+}
+
+header p {
+    font: bold 60px; /* 保持原有的文字样式 */
+    text-align: center; /* 保持原有的文字样式 */
+    margin: 0 auto; /* 保持原有的文字样式 */
+    background: linear-gradient(
+      -45deg,
+      #ee7752,
+      #e73c7e,
+      #23a6d5,
+      #23d5ab
+    );
+    color: transparent;
+    background-clip: text;
+    background-size: 400% 400%;
+    background-position: 50% 100%;
+    animation: gradient 2.5s ease infinite alternate;
 }
 
 .container {
@@ -39,13 +82,18 @@ iframe {
 #main-iframe {
     width: 100%; /* 填充父容器的宽度 */
     height: 100%; /* 填充父容器的高度 */
-    border: none; /* 可选，去除边框 */
+    border: none; /* 去除边框 */
 }
 
 .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    height: 30px;
     text-align: center;
     margin-top: auto; /* 将页脚固定在页面底部 */
+}
+
+.footer a {
+    color: #007bff;
 }
