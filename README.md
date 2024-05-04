@@ -3,8 +3,8 @@ qige‘s components lib for Lightweight Platform homework
 
 # 组件
 - 主题色
-	- 可以去那个网站上偷
-	- 可以做个调色盘
+	- 主体色，边框色 
+	- todo 可以做个调色盘
 - 布局组件
 	- ![alt text](image.png)
 - button
@@ -20,12 +20,10 @@ qige‘s components lib for Lightweight Platform homework
 	- **密码输入框（Password Input）**：与文本输入框类似，但输入内容会被隐藏。
 	- **多行文本框（Textarea）**：允许用户输入多行文本。
 	- **单选按钮（Radio Buttons）**：允许用户从一组选项中选择一个选项。
-	-  **复选框（Checkboxes）**：允许用户从多个选项中选择多个选项。
-	-  **下拉菜单（Select Dropdown）**：提供一个选项列表，用户可以从中选择一个选项。
-	-  **日期选择器（Date Picker）**：允许用户选择日期。
-	-  **文件上传（File Upload）**：允许用户上传文件。
-	-  **按钮（Button）**：用于提交表单、重置表单或执行其他操作。
-	- **隐藏字段（Hidden Fields）**：在不显示给用户的情况下传递数据。
+	- **复选框（Checkboxes）**：允许用户从多个选项中选择多个选项。
+	- **下拉菜单（Select Dropdown）**：提供一个选项列表，用户可以从中选择一个选项。
+	- **日期选择器（Date Picker）**：允许用户选择日期。
+	- **按钮（Button）**：用于提交表单、重置表单或执行其他操作。
 - tree树形组件
 	- 可折叠、可展开
 - table表格组件
@@ -46,8 +44,4 @@ qige‘s components lib for Lightweight Platform homework
 - 文件上传组件
 	- 选择文件
 	- 删除文件
-- bonus
-	- 树形下拉框
-	- 树形选择框
-	- 菜单
 	- 图片上传
